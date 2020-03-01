@@ -83,7 +83,7 @@ Packages and their page numbers are listed below
 
 ##  Human Rights
 
-* Accountability(9) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-human-rights/hr-accountability-introduction
+*  Accountability(9) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-human-rights/hr-accountability-introduction
 *  Empowerment(8) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-human-rights/hr-empowerment-introduction
 *  Introduction to human rights(9) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-human-rights/hr-introduction-to-the-module-introduction
 *  Legality(9) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-human-rights/hr-legality-introduction
