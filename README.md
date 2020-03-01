@@ -6,7 +6,7 @@ Packages and their page numbers are listed below
 
 # Links
 
-# Cluster 1
+## Cluster 1
 
 * Week one (8) - https://emedia.rmit.edu.au/CHC33015/?scorm=cluster-1/cross-cultural-communications-and-misunderstandings
 
@@ -21,7 +21,7 @@ Packages and their page numbers are listed below
 * Week ten (14) - https://emedia.rmit.edu.au/CHC33015/?scorm=cluster-2/week-10  
 
 
-# Cluster 3
+## Cluster 3
 
 *  Week 3 (17) - https://emedia.rmit.edu.au/CHC33015/?scorm=cluster-3/week-3
 *  Week 4 (12) - https://emedia.rmit.edu.au/CHC33015/?scorm=cluster-3/week-4
@@ -41,7 +41,7 @@ Packages and their page numbers are listed below
 *  Week 8 (4) - https://emedia.rmit.edu.au/CHC33015/?scorm=cluster-4/week-8
 *  Week 9 (6) - https://emedia.rmit.edu.au/CHC33015/?scorm=cluster-4/week-9
 
-#  Power and abuse(13)
+##  Power and abuse(13)
 
 *  Power(10) - https://emedia.rmit.edu.au/CHC33015/?scorm=power-and-abuse/power
 *  Abuse(13) - https://emedia.rmit.edu.au/CHC33015/?scorm=power-and-abuse/abuse
@@ -50,13 +50,13 @@ Packages and their page numbers are listed below
 *  Tackling abuse(15) - https://emedia.rmit.edu.au/CHC33015/?scorm=power-and-abuse/tackling-abuse
  
 
-#  Enabling technologies(3)
+##  Enabling technologies(3)
 
 *  Technology in the social services sector(13) - https://emedia.rmit.edu.au/CHC33015/?scorm=enabling-technologies/technology-in-the-social-services-sector
 *  Types of assistive technology(24) - https://emedia.rmit.edu.au/CHC33015/?scorm=enabling-technologies/enabling-technologies-types-of-assistive-technology
 *  Challenges and the digital divide(18) - https://emedia.rmit.edu.au/CHC33015/?scorm=enabling-technologies/4-challenges-and-the-digital-divide
 
-#  Ethics of care(6)
+##  Ethics of care(6)
 
 *  Dignity of risk(6) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-ethics-of-care/dignity-of-risk
 *  Supportive vs. oppressive care(6) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-ethics-of-care/introduction-to-supportive-vs-oppressive-care
@@ -65,7 +65,7 @@ Packages and their page numbers are listed below
 *  Key principles(13) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-ethics-of-care/key-principles
 *  Using ethics of care as a support worker(4) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-ethics-of-care/using-ethics-of-care-as-a-service-worker
 
-#  Working with diverse people(13)
+##  Working with diverse people(13)
 
 *  Intersectionality(11) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-diversity/intersectionality
 *  Discrimination(10) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-diversity/recognise-and-respond-to-discrimination
@@ -81,7 +81,7 @@ Packages and their page numbers are listed below
 *  Workplace practices(6) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-diversity/workplace-practices
 *  Introduction to diversity(2) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-diversity/introduction-to-diversity
 
-#  Human Rights(7)
+##  Human Rights(7)
 
 * Accountability(9) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-human-rights/hr-accountability-introduction
 *  Empowerment(8) - https://emedia.rmit.edu.au/CHC33015/?scorm=fssi-human-rights/hr-empowerment-introduction
@@ -94,3 +94,4 @@ Packages and their page numbers are listed below
 # TODO
 
 Emebed C3319 games in scorm c3w8 - Cluster 3 week 8
+Embed video correctly - CLuster 4 week 3
