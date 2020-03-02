@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from emedia.rmit.edu.au/CHC33015/wp-content/uploads/games/brainiacs/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Mar 2020 05:38:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RMIT</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="mediaelements/mediaelementplayer.css">
+<script src="js/jquery.1.12.js"></script>
+<script src="js/function.js"></script>
+<script src="mediaelements/mediaelement-and-player.js"></script>
+
+<style>
+
+.intro-main{
+	background-color: #BFE9FF;
+}	
+
+.intro-main .intro-img{
+	padding-top:30px;
+}
+
+.intro-main .btn-play{
+	padding-top:45px;
+}
+
+.how-to-play-main{
+	background-color: #BFE9FF;
+	display: none;
+}	
+
+.how-to-play-main .btn-lets-start{
+	position:absolute;
+	top: 339px;
+	right: 3px;
+}
+
+.how-to-play-main .btn-how-to-play{
+	position:absolute;
+	top: 385px;
+    right: 3px;
+}
+
+.how-to-play-main .page-row{
+	max-width: 370px;
+	margin: 0 auto;	
+	padding-top: 50px;
+}
+
+.home-main{
+	background-color: #BFE9FF;
+	background-image: url(img/home-page-bg.png);
+	background-repeat: no-repeat;
+	background-position: 15px 30px;
+	display: none;
+}	
+
+.home-main .btn-start-game{
+    position: absolute;
+    bottom: 28px;
+    left: 182px;
+
+}
+
+.home-main .btn-how-to-play{
+    position: absolute;
+	bottom: 28px;
+    left: 28px;
+}
+
+.home-intro-txt{
+	position: absolute;
+    left: 26px;
+    top: 23px;
+    width: 250px;
+    font-size: 0.85em;
+}
+.home-intro-txt p {
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 11px;
+	line-height: 15px;
+}
+.home-info-close{
+	padding-top:10px;
+	padding-bottom:10px;
+	float: right;
+	cursor: pointer;
+}
+
+</style>
+<script>
+
+</script>
+</head>
+
+<body>
+
+<div class="main-div intro-main">
+	<audio width="1" height="1" controls="none" preload="none" class="aplayer"  style="display:none">
+		<source src="media/music.mp3" />
+		<object width="320" height="240" type="application/x-shockwave-flash" data="mediaelements/flashmediaelement.swf">
+			<param name="movie" value="mediaelements/flashmediaelement.swf" />
+			<param name="flashvars" value="controls%3dtrue%26file%3dmedia/music.html" />
+		</object>
+	</audio> 
+	<div class="menu-bar">
+		<img src="img/menu-home.png" class="menu-home btn-state" onclick="gotoPage('index5caf.html?home-menu=1');">
+		<img src="img/menu-sound-mute.png" class="menu-sound-on btn-state" onclick="muteAudio();">
+		<img src="img/menu-sound.png" class="menu-sound-mute btn-state" onclick="unmuteAudio();">
+	</div>
+	<img src="img/intro-img.png" class="center-img intro-img">
+	<img src="img/btn-play.png" class="center-img btn-state btn-play" onClick="showSplash();">
+	<!-- <div class="ios-sound-play">
+		
+		<p class="iosSoundPlay"><img src="img/play-btn.png" onclick="playAudio()" class="center-img"/>
+		
+		<a onclick="playAudio()">Press here  to enable audio and we're good to go!</a></p>
+	</div> -->
+</div>
+
+<div class="main-div how-to-play-main">
+	<audio width="1" height="1" controls="none" preload="none" class="aplayer"  style="display:none">
+		<source src="media/splash.mp3" />
+		<object width="320" height="240" type="application/x-shockwave-flash" data="mediaelements/flashmediaelement.swf">
+			<param name="movie" value="mediaelements/flashmediaelement.swf" />
+			<param name="flashvars" value="controls%3dtrue%26file%3dmedia/splash.html" />
+		</object>
+	</audio> 
+	<div class="menu-bar">
+		<img src="img/menu-home.png" class="menu-home btn-state" onclick="gotoPage('index5caf.html?home-menu=1');">
+		<img src="img/menu-sound-mute.png" class="menu-sound-on btn-state" onclick="muteAudio();">
+		<img src="img/menu-sound.png" class="menu-sound-mute btn-state" onclick="unmuteAudio();">
+	</div>
+	<div class="page-row row-1">
+		<img src="img/how-to-play-bg.png" class="center-bottom-img">
+		<img src="img/btn-lets-start.png" class="btn-state btn-lets-start" onClick="showHome();">
+		<img src="img/btn-how-to-play.png" class="btn-state btn-how-to-play" onClick="showPageRow($('.row-2'));playNewAudio('music');">
+	</div>
+
+	<div class="page-row row-2">
+		<p class="title-font center-text">How to play</p>
+		<p class="body-font center-text">Mei and Frank have conditions that impact on their brain nerve cell function and cause dementia. See if you can match their symptoms to the brain region that's most likely affected.  </p>
+		<p class="body-font center-text">Pick the right answer to earn points towards a medal. The faster you respond, the more points you earn. But be quick, before time runs out!</p>
+
+		<p><img src="img/btn-lets-start.png" class="center-img btn-state" onClick="gotoPage('questions.html');"></p>
+		<p><img src="img/btn-tell-me-more.png" class="center-img btn-state" onClick="showPageRow($('.row-3'));"></p>
+		
+	</div>
+	<div class="page-row row-3">
+		<p class="title-font center-text">How to play</p>
+		<p class="body-font center-text">There are 10 questions. Choose the correct answer before the timer runs out.  </p>
+		<img src="img/btn-ok.png" class="center-img btn-state btn-ok" onClick="showPageRow($('.row-4'));">
+	</div>
+	<div class="page-row row-4">
+		<p class="title-font center-text">How to play</p>
+		<p class="body-font center-text">For every correct answer, you'll earn 100 points.  </p>
+		<img src="img/btn-ok.png" class="center-img btn-state btn-ok" onClick="showPageRow($('.row-4-2'));">
+	</div>
+	<div class="page-row row-4-2">
+		<p class="title-font center-text">How to play</p>
+		<p class="body-font center-text">The quicker you are, the better you score! Every two seconds you save earns you an extra 50 points.</p>
+		<img src="img/btn-ok.png" class="center-img btn-state btn-ok" onClick="showPageRow($('.row-5'));">
+	</div>
+	<div class="page-row row-5">
+		<p class="title-font center-text">How to play</p>
+		<p class="body-font center-text">Get three questions right in a row and level up with 200 bonus points!  </p>
+		<img src="img/btn-ok.png" class="center-img btn-state btn-ok" onClick="showPageRow($('.row-6'));">
+	</div>
+	<div class="page-row row-6">
+		<p class="title-font center-text">How to play</p>
+		<p class="body-font center-text">Get three questions wrong in a row and it's Game Over! Play again and improve your score. </p>
+		<img src="img/btn-ok.png" class="center-img btn-state btn-ok" onClick="showPageRow($('.row-7'));">
+	</div>
+	<div class="page-row row-7">
+		<p class="title-font center-text">How to play</p>
+		<p class="body-font center-text">Score 1,000 points or more and earn a medal! There are three medal levels.</p>
+		<img src="img/btn-ok.png" class="center-img btn-state btn-ok" onClick="showPageRow($('.row-8'));">
+	</div>
+	<div class="page-row row-8">
+		<p class="title-font center-text">How to play</p>
+		<p class="body-font center-text">Not happy with your score? Just <strong>select</strong> Play Again to reset the game and have another go. </p>
+		<img src="img/btn-ok.png" class="center-img btn-state btn-ok" onClick="showHome();">
+	</div>
+</div>
+<div class="main-div home-main">
+		<audio width="1" height="1" controls="none" preload="none" class="aplayer"  style="display:none">
+			<source src="media/music.mp3" />
+			<object width="320" height="240" type="application/x-shockwave-flash" data="mediaelements/flashmediaelement.swf">
+				<param name="movie" value="mediaelements/flashmediaelement.swf" />
+				<param name="flashvars" value="controls%3dtrue%26file%3dmedia/music.html" />
+			</object>
+		</audio> 
+		<div class="menu-bar">
+			<img src="img/menu-home.png" class="menu-home btn-state" onclick="gotoPage('index5caf.html?home-menu=1');">
+			<img src="img/menu-sound-mute.png" class="menu-sound-on btn-state" onclick="muteAudio();">
+			<img src="img/menu-sound.png" class="menu-sound-mute btn-state" onclick="unmuteAudio();">
+		</div>
+		
+		<img src="img/btn-start-game.png" class="btn-state btn-start-game" onClick="gotoPage('questions.html')">
+		<img src="img/btn-how-to-play.png" class="btn-state btn-how-to-play" onClick="showHowToPlay();">
+		
+
+		<div class="home-btn-box">
+			<div class="home-btn btn-1" onclick="showHomeInfo(1);"><img src='img/brain-1.png'></div>
+			<div class="home-btn btn-2" onclick="showHomeInfo(2);"><img src='img/brain-2.png'></div>
+			<div class="home-btn btn-3" onclick="showHomeInfo(3);"><img src='img/brain-3.png'></div>
+			<div class="home-btn btn-4" onclick="showHomeInfo(4);"><img src='img/brain-4.png'></div>
+			<div class="home-btn btn-5" onclick="showHomeInfo(5);"><img src='img/brain-5.png'></div>
+		</div>
+		<div class="home-intro-txt">
+	     	<img src="img/home-page-logo.png">	
+			<br/>
+			<br/>
+			<p>Mei and Frank have conditions that impact on their brain nerve cell function and cause dementia. </p>
+	     	<img src="img/more-about.png" class="btn-state btn-more-about" onClick="showHomeInfo(0);">	
+			<p>Can you match their symptoms to the brain region most likely affected?</p>
+			<br/>
+			<p><strong>Select</strong> each heading to learn more about brain function and dementia, or jump straight into the game and see how you go! </p>
+		
+		</div>
+		<div class="home-info-box">
+			<div class="home-info info-txt0">
+				<img src="img/btn-close.png" class="home-info-close" onClick="closeInfoBox();"/>
+				<h4 class="clear-right">Dementia</h4>
+				<p>Dementia is a broad term that describes a set of symptoms. Many diseases that cause dementia are caused by proteins building up in brain nerve cells. Some types of dementia are caused by reduced blood flow to these cells. Both causes result in brain cell damage and cell death.</p>
+				<p>Nerve cell damage can cause various symptoms and behaviour changes, depending on the regions of the brain with damaged cells.</p>
+				<p>People with dementia find it increasingly difficult to function normally. Dementia is eventually fatal.</p>
+			</div>		
+			<div class="home-info info-txt1">
+				<img src="img/btn-close.png" class="home-info-close" onClick="closeInfoBox();"/>
+				<h4 class="clear-right">Frontal lobe</h4>
+				<p>The frontal lobe is involved with <strong>personality, emotions, behaviour, speech, writing skills, problem solving</strong> and storing <strong>long term memories.</strong></p>
+				<p>Symptoms of dementia in the frontal lobe include:</p>
+				<ul>
+					<li>personality and behaviour changes including behaving inappropriately  </li>
+					<li>difficulty processing information and making decisions</li>
+					<li>repetitive and compulsive behaviours </li>
+					<li>depression and/or anxiety</li>
+					<li>physical or verbal aggression.</li>
+				</ul>
+			</div>
+			<div class="home-info info-txt2">
+				<img src="img/btn-close.png" class="home-info-close" onClick="closeInfoBox();"/>
+				<h4 class="clear-right">Parietal lobe</h4>
+				<p>The parietal lobe is involved with putting <strong>things in order</strong> (e.g. letters and numbers), <strong>spatial awareness</strong> and <strong>body control</strong>.  </p>
+				<p>Symptoms of dementia in the parietal lobe include:</p>
+			
+				<ul>
+					<li>changes in the way the person sees, hears and interprets what is happening </li>
+					<li>difficulty recognising frequently used objects e.g. brushing their hair with their toothbrush </li>
+					<li>difficulty judging where they are in their environment, making them prone to falls.</li>
+
+				</ul>
+			</div>
+			<div class="home-info info-txt3">
+				<img src="img/btn-close.png" class="home-info-close" onClick="closeInfoBox();"/>
+				<h4 class="clear-right">Temporal lobe & hippocampus</h4>
+				<p>The temporal lobe and hippocampus are involved with <strong>memory</strong> (including <strong>recognising faces</strong>), <strong>vision</strong> and <strong>language</strong> (including <strong>remembering words</strong>).</p>
+				<p>Symptoms of dementia in the temporal lobe and hippocampus include:</p>
+				<ul>
+					<li>memory loss and disorientation</li>
+					<li>forgetfulness e.g. where the keys were placed</li>
+					<li>problems with language and speech </li>
+					<li>difficulty with factual knowledge.</li>
+				</ul>
+
+			</div>
+			<div class="home-info info-txt4">
+				<img src="img/btn-close.png" class="home-info-close" onClick="closeInfoBox();"/>
+				<h4 class="clear-right">Occipital lobe</h4>
+				<p>This occipital lobe is involved with <strong>vision</strong> and <strong>interpreting information</strong> from our eyes. </p>
+				<p>Symptoms of dementia in the occipital lobe include:</p>
+				<ul>
+					<li>difficulty seeing what and where things are</li>
+					<li>illusions and hallucinations</li>
+					<li>misidentification e.g. mistaking one person for another</li>
+					<li>misperceptions e.g. mistaking a shadow for a hole in the ground.</li>
+				</ul>
+
+			</div>
+			<div class="home-info info-txt5">
+				<img src="img/btn-close.png" class="home-info-close" onClick="closeInfoBox();"/>
+				<h4 class="clear-right">Cerebellum</h4>
+				<p>The cerebellum is involved with <strong>language, attention, body control, movement, posture,</strong> and <strong>balance</strong>.</p>
+				<p>Symptoms of dementia in the cerebellum include:</p>
+				<ul>
+					<li>lack of balance and coordination</li>
+					<li>slurred speech</li>
+					<li>abnormal eye movements</li>
+					<li>tremors</li>
+					<li>slower movements.</li>
+				</ul>
+
+			</div>
+		</div>
+
+</div>
+<script>
+var $player;
+/*
+if(!isIOS){
+	$('.ios-sound-play').hide();
+}
+*/
+
+$('.ios-sound-play').hide();
+	
+function playNewAudio(audioFile){
+	$player.setSrc([{src:'media/'+audioFile+'.mp3',type:'audio/mp3'}]);
+	$player.play();
+}
+
+function muteAudio(){
+    $player.setMuted(true);
+	$('.menu-sound-on').hide();
+	$('.menu-sound-mute').show();
+}
+
+function unmuteAudio(){
+    $player.setMuted(false);
+	$('.menu-sound-on').show();
+	$('.menu-sound-mute').hide();
+}
+
+$(document).ready(function(){
+	$('.page-row').hide();
+	$('.row-1').show();
+	
+	$player =  new MediaElementPlayer('.aplayer', {
+	success: function(player, node) {
+		//player.play();
+	  }
+	});
+	
+	showHomeScreen();
+});
+
+function showHowToPlay(){
+	$('.intro-main').hide();
+	$('.home-main').hide();
+	$('.how-to-play-main').show();
+	$('.intro-main').hide();
+	$('.home-main').hide();
+	playNewAudio('music');
+	
+	$('.page-row').hide();
+	$('.row-2').show();
+}
+
+function showSplash(){
+	$('.intro-main').hide();
+	$('.home-main').hide();
+	$('.how-to-play-main').show();
+	$('.intro-main').hide();
+	$('.home-main').hide();
+	playNewAudio('splash');
+	
+	$('.page-row').hide();
+	$('.row-1').show();
+}
+function showHome(){
+	$('.how-to-play-main').hide();
+	$('.home-main').show();
+	playNewAudio('music');
+}
+
+function playAudio(){
+	$('.ios-sound-play').hide();
+	$player.play();
+}
+
+var getUrlParameter = function getUrlParameter(sParam) {
+	var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+		sURLVariables = sPageURL.split('&'),
+		sParameterName,
+		i;
+
+	for (i = 0; i < sURLVariables.length; i++) {
+		sParameterName = sURLVariables[i].split('=');
+
+		if (sParameterName[0] === sParam) {
+			return sParameterName[1] === undefined ? true : sParameterName[1];
+		}
+	}
+};
+
+function showHomeInfo(n){
+	$('.home-info-box').show();
+	$('.home-info').hide();
+	$('.info-txt'+n).show();
+	$('.home-btn img').hide();
+	$('.btn-'+n+' img').show();
+}
+
+function closeInfoBox(){
+	$('.home-btn img').hide();
+	$('.home-info-box').hide();
+}
+
+var toHomeScreen = getUrlParameter('home-menu')||0;
+
+function showHomeScreen(){
+	//toHomeScreen=1;
+	
+	if (toHomeScreen!=0){
+		$('.main-div ').hide();
+		$('.home-main').show();
+		playNewAudio('music');
+	}
+}
+
+</script>
+</body>
+
+<!-- Mirrored from emedia.rmit.edu.au/CHC33015/wp-content/uploads/games/brainiacs/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Mar 2020 05:39:04 GMT -->
+</html>
